@@ -15,12 +15,12 @@ import org.apache.uima.jcas.tcas.Annotation;
  *  */
 public class stringN extends Annotation {
   /** 
-   * @ordered 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(stringN.class);
   /** 
-   * @ordered 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;

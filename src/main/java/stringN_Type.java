@@ -41,7 +41,7 @@ public class stringN_Type extends Annotation_Type {
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = stringN.typeIndexID;
   /**  
-     @modifiable */
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("stringN");
  
