@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Tue Sep 23 18:02:10 EDT 2014
  * XML source: /home/anurag/fall2014/11791/hw1-alnu/src/main/resources/typeSystemDescriptor.xml
- * @generated */
+ *  */
 public class Annotated extends Annotation {
   /** 
    * 
@@ -69,7 +69,6 @@ public class Annotated extends Annotation {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
