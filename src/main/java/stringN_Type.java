@@ -14,14 +14,14 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
  * Updated by JCasGen Tue Sep 23 18:02:10 EDT 2014
- * @generated */
+ *  */
 public class stringN_Type extends Annotation_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -37,19 +37,19 @@ public class stringN_Type extends Annotation_Type {
         } else return new stringN(addr, stringN_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = stringN.typeIndexID;
-  /** @generated 
+  /**  
      @modifiable */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("stringN");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_Begin;
-  /** @generated */
+  /**  */
   final int     casFeatCode_Begin;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -58,7 +58,7 @@ public class stringN_Type extends Annotation_Type {
       jcas.throwFeatMissing("Begin", "stringN");
     return ll_cas.ll_getIntValue(addr, casFeatCode_Begin);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -69,11 +69,11 @@ public class stringN_Type extends Annotation_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_End;
-  /** @generated */
+  /**  */
   final int     casFeatCode_End;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -82,7 +82,7 @@ public class stringN_Type extends Annotation_Type {
       jcas.throwFeatMissing("End", "stringN");
     return ll_cas.ll_getIntValue(addr, casFeatCode_End);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -93,11 +93,11 @@ public class stringN_Type extends Annotation_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_Sentence;
-  /** @generated */
+  /**  */
   final int     casFeatCode_Sentence;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -106,7 +106,7 @@ public class stringN_Type extends Annotation_Type {
       jcas.throwFeatMissing("Sentence", "stringN");
     return ll_cas.ll_getStringValue(addr, casFeatCode_Sentence);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -120,7 +120,7 @@ public class stringN_Type extends Annotation_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

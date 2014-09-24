@@ -14,14 +14,14 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
  * Updated by JCasGen Tue Sep 23 18:02:10 EDT 2014
- * @generated */
+ *  */
 public class Annotated_Type extends Annotation_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -37,19 +37,19 @@ public class Annotated_Type extends Annotation_Type {
         } else return new Annotated(addr, Annotated_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = Annotated.typeIndexID;
-  /** @generated 
+  /**  
      @modifiable */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("Annotated");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_Sentence;
-  /** @generated */
+  /**  */
   final int     casFeatCode_Sentence;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -58,7 +58,7 @@ public class Annotated_Type extends Annotation_Type {
       jcas.throwFeatMissing("Sentence", "Annotated");
     return ll_cas.ll_getStringValue(addr, casFeatCode_Sentence);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -69,11 +69,11 @@ public class Annotated_Type extends Annotation_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_SentId;
-  /** @generated */
+  /**  */
   final int     casFeatCode_SentId;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -82,7 +82,7 @@ public class Annotated_Type extends Annotation_Type {
       jcas.throwFeatMissing("SentId", "Annotated");
     return ll_cas.ll_getStringValue(addr, casFeatCode_SentId);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -96,7 +96,7 @@ public class Annotated_Type extends Annotation_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
