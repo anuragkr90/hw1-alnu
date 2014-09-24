@@ -14,28 +14,28 @@ import org.apache.uima.jcas.tcas.Annotation;
  * XML source: /home/anurag/fall2014/11791/hw1-alnu/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Annotated extends Annotation {
-  /** @generated
-   * @ordered 
+  /** 
+   * 
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Annotated.class);
-  /** @generated
-   * @ordered 
+  /** 
+   * 
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   * \ */
   protected Annotated() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -44,7 +44,7 @@ public class Annotated extends Annotation {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public Annotated(JCas jcas) {
@@ -52,7 +52,7 @@ public class Annotated extends Annotation {
     readObject();   
   } 
 
-  /** @generated
+  /**
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
@@ -79,7 +79,7 @@ public class Annotated extends Annotation {
   //* Feature: Sentence
 
   /** getter for Sentence - gets 
-   * @generated
+   *
    * @return value of the feature 
    */
   public String getSentence() {
@@ -88,7 +88,7 @@ public class Annotated extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Annotated_Type)jcasType).casFeatCode_Sentence);}
     
   /** setter for Sentence - sets  
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setSentence(String v) {
@@ -101,7 +101,7 @@ public class Annotated extends Annotation {
   //* Feature: SentId
 
   /** getter for SentId - gets 
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getSentId() {
@@ -110,7 +110,7 @@ public class Annotated extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Annotated_Type)jcasType).casFeatCode_SentId);}
     
   /** setter for SentId - sets  
-   * @generated
+   *
    * @param v value to set into the feature 
    */
   public void setSentId(String v) {
