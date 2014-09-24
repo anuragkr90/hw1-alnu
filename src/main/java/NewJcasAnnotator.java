@@ -21,6 +21,10 @@ public class NewJcasAnnotator extends JCasAnnotator_ImplBase {
   Chunker mdl;
   public void initialize(UimaContext aContext) throws ResourceInitializationException{
     
+    /* @param UimaContext aContext
+     * Initialize lingpipe Chunker from the modelfilename in aeDescriptor.xml
+     */
+    
     try{
       
       File fl =new File((String)aContext.getConfigParameterValue("modelfilename"));
@@ -35,6 +39,11 @@ public class NewJcasAnnotator extends JCasAnnotator_ImplBase {
   public void process(JCas arg0) throws AnalysisEngineProcessException {
     // TODO Auto-generated method stub
 
+    /* @param JCas arg0
+     * creating Named Entities using lingpipe..model chunks the sentence into named entities..
+     * For all the chunks the start and end of characters and the named entity are stored
+     */
+    
     FSIterator iterator = arg0.getJFSIndexRepository().getAllIndexedFS(Annotated.type);
     Annotated sent = (Annotated) iterator.next();
     Set<Chunk> AllNe = mdl.chunk((String)sent.getSentence()).chunkSet();
@@ -61,7 +70,9 @@ public class NewJcasAnnotator extends JCasAnnotator_ImplBase {
   }
   
   private static int nonwhitespace(String str, int id) {
-    
+    /*
+     * finding number of characters before whitespace
+     */
     
     int idx_notspace = 0;
     for(int i = 0; i < id; i++) {

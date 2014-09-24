@@ -18,6 +18,9 @@ public class NewCollectionReader extends CollectionReader_ImplBase {
 
   BufferedReader bfr =null;
   public void initialize() {
+    /*
+     * Created buffered reader and read the input file specified by value of inputpath in collectionReaderDescriptor.xml
+     */
   File file = new File((String)getConfigParameterValue("inputpath"));
   try {
     bfr = new BufferedReader(new FileReader(file));
@@ -27,6 +30,10 @@ public class NewCollectionReader extends CollectionReader_ImplBase {
 }
   @Override
   public void getNext(CAS aCAS) throws IOException, CollectionException {
+    
+    /* @param CAS aCAS 
+     * reads the input file line by line and gets the sentence id and sentence into the Annotated type system 
+     */
     
     JCas jcas;
     try { 

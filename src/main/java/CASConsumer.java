@@ -21,6 +21,9 @@ public class CASConsumer extends CasConsumer_ImplBase {
   
   public void initialize() throws ResourceInitializationException {
     try {
+      /*
+       * Buffered reader for writing the final output file..outputfilename specifies the name of output file 
+       */
     bfrw = new BufferedWriter(new FileWriter((String) getConfigParameterValue("outputfilename")));
     } catch (IOException e) {
     e.printStackTrace();
@@ -29,6 +32,11 @@ public class CASConsumer extends CasConsumer_ImplBase {
   }
   public void processCas(CAS arg0) throws ResourceProcessException {
     // TODO Auto-generated method stub
+    /* @param CAS arg0
+     * Gets sentence id from from "Annotated"
+     * Gets begin , end and Named Entity from "stringN"
+     * Writes them through the created buffered writer
+     */
 
     try {
       
